@@ -1,0 +1,16 @@
+- name: XL DO SG 29JAN
+  type: vmess
+  server: snvpn.jomblovip.me
+  port: 443
+  uuid: 296e564e-ca94-475d-bfab-46db7a3fa8ac
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: layanan.ruangguru.com
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: snvpn.jomblovip.me
