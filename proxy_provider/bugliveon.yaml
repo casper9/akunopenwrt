@@ -16,3 +16,20 @@ proxies:
     path: /vmess
     headers:
       Host: snvpn.jomblovip.me
+
+- name: LIVE ON YUDHI
+  type: vmess
+  server: zendesk1.appsflyer.com
+  port: 443
+  uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: s1.yudhy.net
+  network: ws
+  ws-opts:
+    path: /yudhynet
+    headers:
+      Host: s1.yudhy.net
