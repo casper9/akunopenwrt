@@ -1,4 +1,4 @@
-- name: LIVE ON DO SG 29JAN
+- name: XL DO SG 29JAN
   type: vmess
   server: snvpn.jomblovip.me
   port: 443
