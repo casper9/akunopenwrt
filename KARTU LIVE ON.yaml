@@ -1,0 +1,199 @@
+---
+proxy-providers:
+  BUGLIVEON:
+    type: http
+    path: "./proxy_provider/bugliveon.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/proxy_provider/bugliveon.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 99
+proxy-groups:
+- name: KARTU LIVE ON
+  type: load-balance
+  disable-udp: false
+  use:
+  - BUGLIVEON
+
+- name: Whatsapp
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - KARTU LIVE ON
+
+- name: VC-WA
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - KARTU LIVE ON
+
+- name: IKLAN
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - KARTU LIVE ON
+
+- name: BOKEP
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - KARTU LIVE ON
+
+- name: Match-Game
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - KARTU LIVE ON
+
+- name: Download-resoucre-Game
+  type: select
+  disable-udp: false
+  proxies:
+  - KARTU LIVE ON
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: 123456
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7874
+  nameserver:
+  - 8.8.8.8
+  - 1.0.0.1
+  - https://dns.google/dns-query
+  - dhcp://"eth1"
+  - 192.168.8.1
+  - 8.8.4.4
+  - https://dns.adguard.com/dns-query
+  - tls://dns.adguard.com
+  - tls://dns.google
+  fallback:
+  - 1.1.1.1
+  - 8.8.4.4
+  - https://cloudflare-dns.com/dns-query
+  - 112.215.203.254
+  default-nameserver:
+  - 8.8.8.8
+  - 1.1.1.1
+  - 112.215.203.254
+  - 1.0.0.1
+  - 192.168.8.1
+  - 8.8.4.4
+
+rules:
+- DST-PORT,7895,REJECT
+- DST-PORT,7892,REJECT
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- IP-CIDR,103.195.103.0/24,GLOBAL
+- IP-CIDR,84.17.53.0/24,GLOBAL
+- IP-CIDR,50.7.252.0/24,GLOBAL
+- DST-PORT,9993,GLOBAL
+- DST-PORT,3478,VC-WA
+- DST-PORT,4244,VC-WA
+- DST-PORT,53,VC-WA
+- DST-PORT,40020,VC-WA
+- DST-PORT,57923,VC-WA
+- RULE-SET,CallOfDutyMobile,Match-Game
+- RULE-SET,Whatsapp,Whatsapp
+- RULE-SET,Game-resoucre,Download-resource-Game
+- RULE-SET,MobileLegends,Match-Game
+- RULE-SET,PUBGMobile,Match-Game
+- RULE-SET,Freefire,Match-Game
+- RULE-SET,ArenaOfValor,Match-Game
+- RULE-SET,Porn,BOKEP
+- RULE-SET,Iklan,IKLAN
+- MATCH,GLOBAL
+external-ui: "/usr/share/openclash/ui"
+geodata-mode: false
+geodata-loader: memconservative
+tcp-concurrent: true
+sniffer:
+  enable: true
+  sniffing:
+  - tls
+  - http
+tun:
+  enable: true
+  stack: system
+  device: utun
+  auto-route: false
+  auto-detect-interface: false
+  dns-hijack:
+  - tcp://any:53
+
+rule-providers:
+  Whatsapp:
+    type: http
+    behavior: classical
+    path: "./rule_provider/Whatsapp.yaml"
+    url: https://cdn.jsdelivr.net/gh/dzagameing/rules@main/WhatsApp.yaml
+    interval: 86400
+  Game-resoucre:
+    type: http
+    behavior: domain
+    path: "./rule_provider/Game-resource.yaml"
+    url: https://cdn.jsdelivr.net/gh/dzagameing/rules@main/GameDownload.yaml
+    interval: 86400
+  MobileLegends:
+    type: http
+    behavior: classical
+    path: "./rule_provider/MobileLegends.yaml"
+    url: https://raw.githubusercontent.com/helmiau/clashrules/main/rule_provider/Game_MobileLegends_Ports.yaml
+    interval: 86400
+  CallOfDutyMobile:
+    type: http
+    behavior: classical
+    path: "./rule_provider/CallOfDutyMobile.yaml"
+    url: https://cdn.jsdelivr.net/gh/dzagameing/rules@main/Game_CallOfDutyMobile.yaml
+    interval: 86400
+  PUBGMobile:
+    type: http
+    behavior: classical
+    path: "./rule_provider/PUBGMobile.yaml"
+    url: https://cdn.jsdelivr.net/gh/dzagameing/rules@main/Game_PUBGMobile_Ports.yaml
+    interval: 86400
+  Freefire:
+    type: http
+    behavior: classical
+    path: "./rule_provider/Freefire.yaml"
+    url: https://cdn.jsdelivr.net/gh/dzagameing/rules@main/Game_Freefire_Ports.yaml
+    interval: 86400
+  ArenaOfValor:
+    type: http
+    behavior: classical
+    path: "./rule_provider/ArenaOfValor.yaml"
+    url: https://cdn.jsdelivr.net/gh/dzagameing/rules@main/Game_ArenaOfValor_Ports.yaml
+    interval: 86400
+  Porn:
+    type: http
+    behavior: classical
+    path: "./rule_provider/porn.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/porn.yaml
+    interval: 86400
+  Iklan:
+    type: http
+    behavior: classical
+    path: "./rule_provider/iklan.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/iklan.yaml
+    interval: 86400
