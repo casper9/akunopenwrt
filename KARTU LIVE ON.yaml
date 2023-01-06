@@ -51,7 +51,7 @@ proxy-groups:
   - DIRECT
   - KARTU LIVE ON
 
-- name: Download-resoucre-Game
+- name: Download-resource-Game
   type: select
   disable-udp: false
   proxies:
