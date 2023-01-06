@@ -56,7 +56,6 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - LIVE ON
   - KARTU XL
 
 port: 7890
