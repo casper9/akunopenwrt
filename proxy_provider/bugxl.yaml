@@ -1,3 +1,5 @@
+proxies:
+
 - name: XL DO SG 29JAN
   type: vmess
   server: snvpn.jomblovip.me
