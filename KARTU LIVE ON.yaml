@@ -1,6 +1,6 @@
 ---
 proxy-providers:
-  BUGLIVEON:
+  LIVEON:
     type: http
     path: "./proxy_provider/bugliveon.yaml"
     url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/proxy_provider/bugliveon.yaml
@@ -9,53 +9,55 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 99
+
 proxy-groups:
-- name: KARTU LIVE ON
+- name: KARTU LIVEON
   type: load-balance
   disable-udp: false
   use:
-  - BUGLIVEON
+  - LIVEON
 
 - name: Whatsapp
   type: select
   disable-udp: false
   proxies:
   - DIRECT
-  - KARTU LIVE ON
+  - KARTU LIVEON
 
 - name: VC-WA
   type: select
   disable-udp: false
   proxies:
   - DIRECT
-  - KARTU LIVE ON
+  - KARTU LIVEON
 
 - name: IKLAN
   type: select
   disable-udp: false
   proxies:
   - REJECT
-  - KARTU LIVE ON
+  - KARTU LIVEON
 
 - name: BOKEP
   type: select
   disable-udp: false
   proxies:
   - REJECT
-  - KARTU LIVE ON
+  - KARTU LIVEON
 
 - name: Match-Game
   type: select
   disable-udp: false
   proxies:
   - DIRECT
-  - KARTU LIVE ON
+  - KARTU LIVEON
 
 - name: Download-resource-Game
   type: select
   disable-udp: false
   proxies:
-  - KARTU LIVE ON
+  - LIVE ON
+  - KARTU LIVEON
 
 port: 7890
 socks-port: 7891
@@ -152,7 +154,7 @@ rule-providers:
   Game-resoucre:
     type: http
     behavior: domain
-    path: "./rule_provider/Game-resource.yaml"
+    path: "./rule_provider/Game-resoucre.yaml"
     url: https://cdn.jsdelivr.net/gh/dzagameing/rules@main/GameDownload.yaml
     interval: 86400
   MobileLegends:
