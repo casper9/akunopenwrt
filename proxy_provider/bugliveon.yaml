@@ -3,15 +3,15 @@ proxies:
   server: zendesk1.appsflyer.com
   port: 443
   type: trojan
-  password: f763a762-64cd-4294-a4ee-d580d79a778a
+  password: mcasper
   network: ws
-  sni: skartivpn.jomblovip.me
+  sni: id3-vvip.feristore.my.id
   skip-cert-verify: true
   udp: true
   ws-opts:
-    path: /trojan
+    path: /trojan-go
   headers:
-    Host: skartivpn.jomblovip.me
+    Host: id3-vvip.feristore.my.id
 
 - name: SG DO
   server: zendesk1.appsflyer.com
