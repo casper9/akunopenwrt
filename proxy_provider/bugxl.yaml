@@ -1,5 +1,19 @@
 proxies:
 
+- name: SG 30JAN
+  server: sghe.tjvpn.org
+  port: 443
+  type: trojan
+  password: 9274b490-9b07-11ed-b734-225401db9d57
+  network: tcp
+  sni: layanan.ruangguru.com
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /fastssh
+  headers:
+    Host: layanan.ruangguru.com
+
 - name: XL DO SG 29JAN
   type: vmess
   server: snvpn.jomblovip.me
@@ -16,20 +30,3 @@ proxies:
     path: /vmess
     headers:
       Host: snvpn.jomblovip.me
-
-- name: LIVE ON YUDHI
-  type: vmess
-  server: s1.yudhy.net
-  port: 443
-  uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: layanan.ruangguru.com
-  network: ws
-  ws-opts:
-    path: /yudhynet
-    headers:
-      Host: s1.yudhy.net
