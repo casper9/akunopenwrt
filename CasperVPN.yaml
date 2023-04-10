@@ -13,7 +13,7 @@ rule-providers:
     url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/streaming.yaml
     interval: 3600
   Sosmed:
-    type: httl
+    type: http
     behavior: classical
     path: "./rule_provider/sosmed.yaml"
     url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/sosmed.yaml
