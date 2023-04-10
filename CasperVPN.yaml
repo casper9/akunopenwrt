@@ -1,54 +1,78 @@
 ---
 rule-providers:
   Reject:
-    type: file
+    type: http
     behavior: classical
     path: "./rule_provider/iklan.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/iklan.yaml
+    interval: 3600
   Streaming:
-    type: file
+    type: http
     behavior: classical
     path: "./rule_provider/streaming.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/streaming.yaml
+    interval: 3600
   Sosmed:
-    type: file
+    type: httl
     behavior: classical
     path: "./rule_provider/sosmed.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/sosmed.yaml
+    interval: 3600
   Game1:
-    type: file
+    type: http
     behavior: classical
     path: "./rule_provider/game1.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/game1.yaml
+    interval: 3600
   Game2:
-    type: file
+    type: http
     behavior: classical
     path: "./rule_provider/game2.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/game2.yaml
+    interval: 3600
   Game3:
-    type: file
+    type: http
     behavior: classical
     path: "./rule_provider/game3.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/game3.yaml
+    interval: 3600
   Game4:
-    type: file
+    type: http
     behavior: classical
     path: "./rule_provider/game4.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/game4.yaml
+    interval: 3600
   Game5:
-    type: file
+    type: http
     behavior: classical
     path: "./rule_provider/game5.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/game5.yaml
+    interval: 3600
   Banking:
-    type: file
+    type: http
     behavior: domain
     path: "./rule_provider/banking.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/banking.yaml
+    interval: 3600
   Bokep:
-    type: file
+    type: http
     behavior: classical
     path: "./rule_provider/porn.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/porn.yaml
+    interval: 3600
   OLshop:
-    type: file
+    type: http
     behavior: domain
     path: "./rule_provider/olshop.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/olshop.yaml
+    interval: 3600
 
 proxy-providers:
   ProxyCasper:
-    type: file
+    type: http
     path: "./proxy_provider/akuncasper.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/proxy_provider/akuncasper.yaml
+    interval: 3600
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
