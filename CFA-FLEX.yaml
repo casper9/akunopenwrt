@@ -70,7 +70,7 @@ rule-providers:
 proxy-providers:
   ProxyCasper:
     type: http
-    path: "./akuncasper.yaml"
+    path: "./akunflex.yaml"
     url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/proxy_provider/akunflex.yaml
     interval: 3600
     health-check:
