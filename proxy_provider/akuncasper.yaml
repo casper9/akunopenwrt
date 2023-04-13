@@ -1,5 +1,5 @@
 proxies:
-- name: ID indo
+- name: ID indo liveon
   server: 104.21.8.121
   port: 443
   type: trojan
@@ -12,8 +12,22 @@ proxies:
     path: /trojan-go
   headers:
     Host: id3-vvip.feristore.my.id
-
-- name: ID AWS
+    
+- name: ID indo flex
+  server: sogood.linefriends.com
+  port: 443
+  type: trojan
+  password: mcasper
+  network: ws
+  sni: id3-vvip.feristore.my.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan-go
+  headers:
+    Host: id3-vvip.feristore.my.id
+    
+- name: ID AWS liveon
   type: trojan
   server: 104.21.8.121
   port: 443
@@ -25,7 +39,19 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
 
-- name: SGDO GRPC
+- name: ID AWS flex
+  type: trojan
+  server: sogood.linefriends.com
+  port: 443
+  password: 8316241a-b281-4afa-9fbc-557203774b35
+  udp: true
+  sni: idaws2.casper.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+    
+- name: SGDO GRPC liveon
   type: trojan
   server: 104.21.8.121
   port: 443
@@ -37,7 +63,19 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
 
-- name: SG AWS GRPC
+- name: SGDO GRPC flex
+  type: trojan
+  server: sogood.linefriends.com
+  port: 443
+  password: 9463234d-52cb-4eec-84af-a85f186ffba8
+  udp: true
+  sni: sgdonew.casper.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+    
+- name: SG AWS GRPC liveon
   type: trojan
   server: 104.21.8.121
   port: 443
@@ -48,8 +86,20 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trojan-grpc
+    
+- name: SG AWS GRPC flex
+  type: trojan
+  server: sogood.linefriends.com
+  port: 443
+  password: 4aa8d9ef-631a-45cc-812b-bbc7e8f1ab0b
+  udp: true
+  sni: aws.casper.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc    
  
-- name: SGDO
+- name: SGDO liveon
   type: trojan
   server: 104.21.8.121
   port: 443
@@ -60,3 +110,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trojan-grpc
+    
+- name: SGDO flex
+  type: trojan
+  server: sogood.linefriends.com
+  port: 443
+  password: b87a8c35-7fa4-4c45-b560-db6f4ed2b612
+  udp: true
+  sni: sgdo2.casper.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc    
