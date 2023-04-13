@@ -1,5 +1,5 @@
 proxies:
-- name: ID indo flex
+- name: ID indo
   server: sogood.linefriends.com
   port: 443
   type: trojan
@@ -13,7 +13,7 @@ proxies:
   headers:
     Host: id3-vvip.feristore.my.id
     
-- name: ID AWS flex
+- name: ID AWS
   type: trojan
   server: sogood.linefriends.com
   port: 443
@@ -25,7 +25,7 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
     
-- name: SGDO GRPC flex
+- name: SGDO GRPC
   type: trojan
   server: sogood.linefriends.com
   port: 443
