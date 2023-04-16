@@ -3,9 +3,9 @@ proxies:
   type: trojan
   server: sogood.linefriends.com
   port: 443
-  password: 8316241a-b281-4afa-9fbc-557203774b35
+  password: 61f47c55-a20b-46db-b56c-057f2041771a
   udp: true
-  sni: idaws2.casper.my.id
+  sni: awsid.casper.my.id
   skip-cert-verify: true
   network: grpc
   grpc-opts:
