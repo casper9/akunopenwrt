@@ -11,18 +11,6 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
     
-- name: SGDO GRPC
-  type: trojan
-  server: sogood.linefriends.com
-  port: 443
-  password: 9463234d-52cb-4eec-84af-a85f186ffba8
-  udp: true
-  sni: sgdonew.casper.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-    
    
 - name: SG AWS GRPC
   type: trojan
