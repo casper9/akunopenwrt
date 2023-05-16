@@ -10,13 +10,12 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trojan-grpc
-    
-   
+     
 - name: SG AWS2
   type: trojan
   server: sogood.linefriends.com
   port: 443
-  password: 4aa8d9ef-631a-45cc-812b-bbc7e8f1ab0b
+  password: 3cb8dafe-962b-41ac-b57a-93da0383e81b
   udp: true
   sni: aws2.casper.my.id
   skip-cert-verify: true
