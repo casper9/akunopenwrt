@@ -87,6 +87,7 @@ proxy-groups:
   - LOADBALANCE
   - FAILBACK
   - DIRECT
+  - REJECT
   use:
   - ProxyCasper
   url: http://www.gstatic.com/generate_204
@@ -101,6 +102,7 @@ proxy-groups:
   - LOADBALANCE
   - FAILBACK
   - DIRECT
+  - REJECT
   use:
   - ProxyCasper
   url: http://www.gstatic.com/generate_204
@@ -115,6 +117,7 @@ proxy-groups:
   - LOADBALANCE
   - FAILBACK
   - DIRECT
+  - REJECT
   use:
   - ProxyCasper
   url: http://www.gstatic.com/generate_204
@@ -129,6 +132,7 @@ proxy-groups:
   - LOADBALANCE
   - FAILBACK
   - DIRECT
+  - REJECT
   use:
   - ProxyCasper
   url: http://www.gstatic.com/generate_204
@@ -169,10 +173,10 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - DIRECT
   - AUTO
   - LOADBALANCE
   - FAILBACK
+  - DIRECT
   use:
   - ProxyCasper
   url: http://www.gstatic.com/generate_204
@@ -183,10 +187,10 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - DIRECT
   - AUTO
   - LOADBALANCE
   - FAILBACK
+  - DIRECT
   use:
   - ProxyCasper
   url: http://www.gstatic.com/generate_204
