@@ -101,6 +101,7 @@ proxy-groups:
   - LOADBALANCE
   - FAILBACK
   - DIRECT
+  - REJECT
   use:
   - ProxyCasper
   url: http://www.gstatic.com/generate_204
@@ -115,6 +116,7 @@ proxy-groups:
   - LOADBALANCE
   - FAILBACK
   - DIRECT
+  - REJECT
   use:
   - ProxyCasper
   url: http://www.gstatic.com/generate_204
@@ -129,6 +131,7 @@ proxy-groups:
   - LOADBALANCE
   - FAILBACK
   - DIRECT
+  - REJECT
   use:
   - ProxyCasper
   url: http://www.gstatic.com/generate_204
