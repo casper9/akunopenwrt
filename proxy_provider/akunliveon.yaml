@@ -1,28 +1,16 @@
 proxies:
-- name: ID AWS
+- name: SG AWS2
   type: trojan
   server: 104.21.8.121
   port: 443
-  password: 61f47c55-a20b-46db-b56c-057f2041771a
+  password: 3cb8dafe-962b-41ac-b57a-93da0383e81b
   udp: true
-  sni: awsid.casper.my.id
+  sni: aws2.casper.my.id
   skip-cert-verify: true
   network: grpc
   grpc-opts:
-    grpc-service-name: trojan-grpc
-
-- name: SGDO GRPC
-  type: trojan
-  server: 104.21.8.121
-  port: 443
-  password: 9463234d-52cb-4eec-84af-a85f186ffba8
-  udp: true
-  sni: sgdonew.casper.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-
+    grpc-service-name: trojan-grpc    
+ 
 - name: SG AWS GRPC
   type: trojan
   server: 104.21.8.121
@@ -33,9 +21,9 @@ proxies:
   skip-cert-verify: true
   network: grpc
   grpc-opts:
-    grpc-service-name: trojan-grpc
+    grpc-service-name: trojan-grpc    
+ 
     
-
 - name: SGDO
   type: trojan
   server: 104.21.8.121
@@ -46,5 +34,4 @@ proxies:
   skip-cert-verify: true
   network: grpc
   grpc-opts:
-    grpc-service-name: trojan-grpc
-    
+    grpc-service-name: trojan-grpc    
