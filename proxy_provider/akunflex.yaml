@@ -11,19 +11,6 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc    
 
-- name: IKD
-  type: trojan
-  server: sogood.linefriends.com
-  port: 443
-  password: b66d9c4a-f22f-4ad9-b172-fe46823a6b6e
-  udp: true
-  sni: garnet221.slowapp.cfd
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc    
-
-
 - name: GCP ID 2
   type: trojan
   server: sogood.linefriends.com
