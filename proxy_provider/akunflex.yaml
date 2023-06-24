@@ -11,6 +11,18 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc    
 
+- name: AWS ID
+  type: trojan
+  server: sogood.linefriends.com
+  port: 443
+  password: 2c39be91-22ca-435e-a0b3-5b1d93c9179a
+  udp: true
+  sni: awsid.casper.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+
 - name: GCP ID 2
   type: trojan
   server: sogood.linefriends.com
