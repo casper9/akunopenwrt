@@ -1,37 +1,12 @@
 proxies:
-- name: SG AWS2
+- name: kosong
   type: trojan
-  server: aws2.casper.my.id
+  server: server
   port: 443
-  password: 3cb8dafe-962b-41ac-b57a-93da0383e81b
+  password: uuid
   udp: true
-  sni: meet.google.com
+  sni: bug
   skip-cert-verify: true
   network: grpc
   grpc-opts:
-    grpc-service-name: trojan-grpc    
- 
-- name: SG AWS GRPC
-  type: trojan
-  server: aws.casper.my.id
-  port: 443
-  password: 4aa8d9ef-631a-45cc-812b-bbc7e8f1ab0b
-  udp: true
-  sni: meet.google.com
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc    
- 
-    
-- name: SGDO
-  type: trojan
-  server: sgdo2.casper.my.id
-  port: 443
-  password: b87a8c35-7fa4-4c45-b560-db6f4ed2b612
-  udp: true
-  sni: meet.google.com
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc    
+    grpc-service-name: trojan-grpc
