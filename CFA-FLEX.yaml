@@ -7,7 +7,7 @@ rule-providers:
     url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/iklan.yaml
     interval: 3600
   Chat:
-    type: file
+    type: http
     behavior: classical
     path: "./chat.yaml"
     url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/chat.yaml
