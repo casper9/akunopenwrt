@@ -11,7 +11,13 @@ rule-providers:
     behavior: classical
     path: "./streaming.yaml"
     url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/streaming.yaml
-    interval: 3601
+    interval: 3600
+  Chat:
+    type: file
+    behavior: classical
+    path: "./chat.yaml"
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/chat.yaml
+    interval: 3600
   Sosmed:
     type: http
     behavior: classical
@@ -107,6 +113,20 @@ proxy-groups:
   interval: '300'
   tolerance: '100' 
 
+- name: CHAT
+  type: select
+  disable-udp: false
+  proxies:
+  - AUTO
+  - LOADBALANCE
+  - FAILBACK
+  - DIRECT
+  use:
+  - ProxyCasper
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+  tolerance: '100' 
+  
 - name: STREAMING
   type: select
   disable-udp: false
@@ -384,5 +404,6 @@ rules:
 - RULE-SET,Sosmed,SOSMED
 - RULE-SET,Streaming,STREAMING
 - RULE-SET,OLshop,OLSHOP
+- RULE-SET,Chat,CHAT
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
 - MATCH,CASPER
