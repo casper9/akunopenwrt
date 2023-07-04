@@ -27,7 +27,7 @@ proxies:
   type: trojan
   server: beacon.liveon.id
   port: 443
-  password: 5a17fe4b-00d8-4149-bd08-69eb18c37a4e
+  password: 785b1af0-5e7a-41d7-b012-e27ce47680fd
   udp: true
   sni: vip-id2.casper.my.id
   skip-cert-verify: true
