@@ -1,16 +1,4 @@
 proxies:
-- name: GCP ID
-  type: trojan
-  server: sogood.linefriends.com
-  port: 443
-  password: 785b1af0-5e7a-41d7-b012-e27ce47680fd
-  udp: true
-  sni: gcpid.casper.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc    
-
 - name: AWS ID
   type: trojan
   server: sogood.linefriends.com
@@ -18,18 +6,6 @@ proxies:
   password: 2c39be91-22ca-435e-a0b3-5b1d93c9179a
   udp: true
   sni: awsid.casper.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-
-- name: GCP ID 2
-  type: trojan
-  server: sogood.linefriends.com
-  port: 443
-  password: 3de3a8cc-8be8-4208-b9c6-a700629a4201
-  udp: true
-  sni: gcpid22.casper.my.id
   skip-cert-verify: true
   network: grpc
   grpc-opts:
