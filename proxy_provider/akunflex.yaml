@@ -27,7 +27,7 @@ proxies:
   type: trojan
   server: sogood.linefriends.com
   port: 443
-  password: 3cb8dafe-962b-41ac-b57a-93da0383e81b
+  password: 07b63be0-ee9b-4035-9a32-3f7c368c2af6 
   udp: true
   sni: aws2.casper.my.id
   skip-cert-verify: true
