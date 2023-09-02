@@ -1,15 +1,61 @@
 proxies:
+- name: AWS SG
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: 0e78049a-a050-4e70-a1d8-5fb9c4efc268
+  udp: true
+  sni: aws.casper.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc 
+
 - name: AWS ID
   type: trojan
   server: beacon.liveon.id
   port: 443
-  password: 2c39be91-22ca-435e-a0b3-5b1d93c9179a
+  password: bb6cc0a3-5df0-447b-b4c0-59d131912d32
   udp: true
-  sni: awsid.casper.my.id
+  sni: idaws.vpnvip.tech
   skip-cert-verify: true
   network: grpc
   grpc-opts:
-    grpc-service-name: trojan-grpc
+    grpc-service-name: trojan-grpc 
+- name: SGDO
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: 018d14e4-d621-4cfc-84eb-0f5d7e827522
+  udp: true
+  sni: sgdo.casper.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc 
+
+- name: SGDO 2
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: bb6cc0a3-5df0-447b-b4c0-59d131912d32
+  udp: true
+  sni: sgdo2.casper.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc 
+- name: ID RUMAH WEB
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: 10c13eca-68db-4dbf-a717-11bf60883f68
+  udp: true
+  sni: id-rwb.casper.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc 
 
 - name: ID ATHARVA 1
   type: trojan
@@ -35,27 +81,3 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
     
-- name: SG AWS GRPC
-  type: trojan
-  server: beacon.liveon.id
-  port: 443
-  password: 3cb8dafe-962b-41ac-b57a-93da0383e81b
-  udp: true
-  sni: aws2.casper.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc    
- 
-    
-- name: SGDO
-  type: trojan
-  server: beacon.liveon.id
-  port: 443
-  password: b87a8c35-7fa4-4c45-b560-db6f4ed2b612
-  udp: true
-  sni: sgdo.casper.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc    
