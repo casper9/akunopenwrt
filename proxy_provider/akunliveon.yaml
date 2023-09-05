@@ -3,7 +3,7 @@ proxies:
   type: trojan
   server: beacon.liveon.id
   port: 443
-  password: 0e78049a-a050-4e70-a1d8-5fb9c4efc268
+  password: 311cc98d-a413-457f-af41-1570693034c0
   udp: true
   sni: aws.casper.my.id
   skip-cert-verify: true
@@ -11,17 +11,6 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc 
 
-- name: AWS ID
-  type: trojan
-  server: beacon.liveon.id
-  port: 443
-  password: bb6cc0a3-5df0-447b-b4c0-59d131912d32
-  udp: true
-  sni: idaws.vpnvip.tech
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc 
 - name: SGDO
   type: trojan
   server: beacon.liveon.id
