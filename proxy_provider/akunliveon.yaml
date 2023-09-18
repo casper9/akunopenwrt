@@ -33,12 +33,13 @@ proxies:
   skip-cert-verify: true
   network: grpc
   grpc-opts:
-    grpc-service-name: trojan-grpc 
+    grpc-service-name: trojan-grpc
+
 - name: ID RUMAH WEB
   type: trojan
   server: beacon.liveon.id
   port: 443
-  password: 10c13eca-68db-4dbf-a717-11bf60883f68
+  password: eaaa0f22-fddd-46f3-8b1c-006d3322c600
   udp: true
   sni: id-rwb.casper.my.id
   skip-cert-verify: true
