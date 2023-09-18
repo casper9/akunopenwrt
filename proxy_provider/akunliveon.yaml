@@ -71,3 +71,15 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
     
+- name: ID CLOUD
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: c764e906-fc32-4330-a353-f4cb083ad980
+  udp: true
+  sni: id-vip.vpnvip.tech
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+    
