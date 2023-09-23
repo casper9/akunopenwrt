@@ -1,16 +1,4 @@
 proxies:
-- name: AWS SG
-  type: trojan
-  server: beacon.liveon.id
-  port: 443
-  password: 311cc98d-a413-457f-af41-1570693034c0
-  udp: true
-  sni: aws.casper.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc 
-
 - name: SGDO
   type: trojan
   server: beacon.liveon.id
@@ -22,18 +10,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trojan-grpc 
-
-- name: SGDO 2
-  type: trojan
-  server: beacon.liveon.id
-  port: 443
-  password: bb6cc0a3-5df0-447b-b4c0-59d131912d32
-  udp: true
-  sni: sgdo2.casper.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
 
 - name: ID RUMAH WEB
   type: trojan
