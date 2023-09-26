@@ -11,6 +11,18 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc 
 
+- name: OVH SG
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: 41438181-4f77-40ba-84cb-294896d60ee0
+  udp: true
+  sni: ovh.vipcasper.com
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc 
+
 - name: SG LINODE
   type: trojan
   server: beacon.liveon.id
