@@ -59,6 +59,18 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc 
 
+- name: ID HERZA
+  type: trojan
+  server: beacon.liveon.id
+  port: 443
+  password: 8a754a99-474f-4fb4-83b9-1dc7ccce0ae9
+  udp: true
+  sni: id5.vipcasper.com
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc 
+
 - name: ID CLOUDHOST
   type: trojan
   server: beacon.liveon.id
