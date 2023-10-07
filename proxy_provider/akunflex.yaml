@@ -39,9 +39,9 @@ proxies:
   type: trojan
   server: sogood.linefriends.com
   port: 443
-  password: 018d14e4-d621-4cfc-84eb-0f5d7e827522
+  password: dc898aff-6cc1-4167-be9f-37a28a54ecd9
   udp: true
-  sni: sgdo.casper.my.id
+  sni: sgdo.vipcasper.com
   skip-cert-verify: true
   network: grpc
   grpc-opts:
@@ -71,11 +71,11 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc 
 
-- name: ID CLOUDHOST
+- name: ID LINODE
   type: trojan
   server: sogood.linefriends.com
   port: 443
-  password: d1bb15ed-6ca4-4b9d-8d2b-79ca3c15ca93
+  password: fbee053c-3945-45d5-81e5-2cfcf78c9093
   udp: true
   sni: id4.vipcasper.com
   skip-cert-verify: true
