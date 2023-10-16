@@ -77,7 +77,7 @@ proxy-providers:
   ProxyCasper:
     type: http
     path: "./akunflex.yaml"
-    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/proxy_provider/akunflex.yaml
+    url: https://pastebin.com/raw/qwdRVScw
     interval: 3600
     health-check:
       enable: true
