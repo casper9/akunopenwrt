@@ -152,33 +152,6 @@ dns:
   enable: true
   ipv6: false
   enhanced-mode: fake-ip
-  listen: 0.0.0.0:7874
-  nameserver:
-  - 192.168.8.1
-  - dhcp://"eth1"
-  - dhcp://"wlan0"
-  - 192.168.43.1
-  - 114.114.114.114
-  - 119.29.29.29
-  - https://doh.pub/dns-query
-  - https://dns.alidns.com/dns-query
-  default-nameserver:
-  - 192.168.8.1
-  - 192.168.43.1
-  - 114.114.114.114
-  - 119.29.29.29
-ipv6: false
-tun:
-  enable: true
-  stack: system
-  auto-route: false
-  auto-detect-interface: false
-  dns-hijack:
-  - tcp://any:53
-profile:
-  store-selected: true
-  store-fakeip: true
-  store-fake-ip: true
 rules:
 - IP-CIDR,103.195.103.66/23,CASPER
 - IP-CIDR,84.17.53.155/23,CASPER
