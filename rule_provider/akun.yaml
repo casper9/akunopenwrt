@@ -15,7 +15,7 @@ proxies:
   type: trojan
   server: ilped.vvip-vpn.cloud
   port: 443
-  password: f65d4499-5269-4010-ba76-30de3f3ef022 
+  password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
   udp: true
   sni: id.vvip-vpn.cloud
   skip-cert-verify: true
@@ -39,7 +39,7 @@ proxies:
   type: trojan
   server: zaintest.vuclip.com
   port: 443
-  password: f65d4499-5269-4010-ba76-30de3f3ef022 
+  password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
   udp: true
   sni: id.vvip-vpn.cloud
   skip-cert-verify: true
@@ -63,7 +63,7 @@ proxies:
   type: trojan
   server: ava.game.naver.com
   port: 443
-  password: f65d4499-5269-4010-ba76-30de3f3ef022 
+  password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
   udp: true
   sni: id.vvip-vpn.cloud
   skip-cert-verify: true
@@ -87,7 +87,7 @@ proxies:
   type: trojan
   server: cache.netflix.com
   port: 443
-  password: f65d4499-5269-4010-ba76-30de3f3ef022 
+  password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
   udp: true
   sni: id.vvip-vpn.cloud
   skip-cert-verify: true
@@ -111,7 +111,7 @@ proxies:
   type: trojan
   server: 104.21.28.78
   port: 443
-  password: f65d4499-5269-4010-ba76-30de3f3ef022 
+  password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
   udp: true
   sni: id.vvip-vpn.cloud
   skip-cert-verify: true
@@ -135,7 +135,7 @@ proxies:
   type: trojan
   server: graph.instagram.com
   port: 443
-  password: f65d4499-5269-4010-ba76-30de3f3ef022 
+  password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
   udp: true
   sni: id.vvip-vpn.cloud
   skip-cert-verify: true
