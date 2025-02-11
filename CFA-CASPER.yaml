@@ -136,22 +136,39 @@ proxy-groups:
   interval: '300'
   tolerance: '100' 
   
-redir-port: 7702
-tproxy-port: 7705
-port: 7700
-socks-port: 7701
-mixed-port: 7703
+redir-port: 7072
+tproxy-port: 7073
+port: 7071
+socks-port: 7074
+mixed-port: 7075
+ipv6: false
 mode: rule
 log-level: silent
 allow-lan: true
 external-controller: 0.0.0.0:9090
-secret: casper
-bind-address: "*"
-external-ui: "/usr/share/openclash/ui"
+secret: ''
+bind-address: '*'
+unified-delay: true
+profile:
+  store-selected: true
 dns:
   enable: true
   ipv6: false
-  enhanced-mode: fake-ip
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7874
+  nameserver:
+  - 8.8.8.8
+  - 1.0.0.1
+  - https://dns.google/dns-query
+  fallback:
+  - 1.1.1.1
+  - 8.8.4.4
+  - https://cloudflare-dns.com/dns-query
+  - 112.215.203.254
+  default-nameserver:
+  - 8.8.8.8
+  - 1.1.1.1
+  - 112.215.203.254
 rules:
 - IP-CIDR,103.195.103.66/23,CASPER
 - IP-CIDR,84.17.53.155/23,CASPER
