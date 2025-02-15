@@ -33,7 +33,7 @@ proxies:
   skip-cert-verify: true
   network: grpc
   grpc-opts:
-    grpc-service-name: trojan-grpc
+    grpc-service-name: grpc-trojan
 
 - name: SGDO VIU
   type: trojan
@@ -69,7 +69,7 @@ proxies:
   skip-cert-verify: true
   network: grpc
   grpc-opts:
-    grpc-service-name: trojan-grpc
+    grpc-service-name: grpc-trojan
 
 - name: SGDO AVA
   type: trojan
@@ -105,7 +105,7 @@ proxies:
   skip-cert-verify: true
   network: grpc
   grpc-opts:
-    grpc-service-name: trojan-grpc
+    grpc-service-name: grpc-trojan
 
 - name: SGDO Netflix
   type: trojan
@@ -141,7 +141,7 @@ proxies:
   skip-cert-verify: true
   network: grpc
   grpc-opts:
-    grpc-service-name: trojan-grpc
+    grpc-service-name: grpc-trojan
 
 - name: SGDO tiktok
   type: trojan
@@ -177,7 +177,7 @@ proxies:
   skip-cert-verify: true
   network: grpc
   grpc-opts:
-    grpc-service-name: trojan-grpc
+    grpc-service-name: grpc-trojan
 
 - name: SGDO IG
   type: trojan
@@ -213,4 +213,4 @@ proxies:
   skip-cert-verify: true
   network: grpc
   grpc-opts:
-    grpc-service-name: trojan-grpc
+    grpc-service-name: grpc-trojan
