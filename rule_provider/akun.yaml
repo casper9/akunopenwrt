@@ -23,6 +23,18 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
 
+- name: ID 2 ILPED
+  type: trojan
+  server: ilped.vvip-vpn.cloud
+  port: 443
+  password: dd8565fa-9bff-4740-909f-16e4ec9db80e
+  udp: true
+  sni: id-trojan-vvip-3.topvpn.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+
 - name: SGDO VIU
   type: trojan
   server: zaintest.vuclip.com
@@ -42,6 +54,18 @@ proxies:
   password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
   udp: true
   sni: id.vvip-vpn.cloud
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+
+- name: ID 2 VIU
+  type: trojan
+  server: zaintest.vuclip.com
+  port: 443
+  password: dd8565fa-9bff-4740-909f-16e4ec9db80e
+  udp: true
+  sni: id-trojan-vvip-3.topvpn.my.id
   skip-cert-verify: true
   network: grpc
   grpc-opts:
@@ -71,6 +95,18 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
 
+- name: ID 2 AVA
+  type: trojan
+  server: ava.game.naver.com
+  port: 443
+  password: dd8565fa-9bff-4740-909f-16e4ec9db80e
+  udp: true
+  sni: id-trojan-vvip-3.topvpn.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+
 - name: SGDO Netflix
   type: trojan
   server: cache.netflix.com
@@ -90,6 +126,18 @@ proxies:
   password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
   udp: true
   sni: id.vvip-vpn.cloud
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+
+- name: ID 2 NETFLIX
+  type: trojan
+  server: chache.netflix.com
+  port: 443
+  password: dd8565fa-9bff-4740-909f-16e4ec9db80e
+  udp: true
+  sni: id-trojan-vvip-3.topvpn.my.id
   skip-cert-verify: true
   network: grpc
   grpc-opts:
@@ -119,6 +167,18 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
 
+- name: ID 2 TIKTOK
+  type: trojan
+  server: 104.21.28.78
+  port: 443
+  password: dd8565fa-9bff-4740-909f-16e4ec9db80e
+  udp: true
+  sni: id-trojan-vvip-3.topvpn.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+
 - name: SGDO IG
   type: trojan
   server: graph.instagram.com
@@ -138,6 +198,18 @@ proxies:
   password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
   udp: true
   sni: id.vvip-vpn.cloud
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+
+- name: ID 2 IG
+  type: trojan
+  server: graph.instagram.com
+  port: 443
+  password: dd8565fa-9bff-4740-909f-16e4ec9db80e
+  udp: true
+  sni: id-trojan-vvip-3.topvpn.my.id
   skip-cert-verify: true
   network: grpc
   grpc-opts:
