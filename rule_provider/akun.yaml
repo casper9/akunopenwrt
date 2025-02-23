@@ -23,18 +23,6 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
 
-- name: ID 2 ILPED
-  type: trojan
-  server: bakrie.ac.id
-  port: 443
-  password: dd8565fa-9bff-4740-909f-16e4ec9db80e
-  udp: true
-  sni: bakrie.ac.id.id-trojan-vvip-3.topvpn.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-trojan
-
 - name: SGDO VIU
   type: trojan
   server: zaintest.vuclip.com
@@ -58,18 +46,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trojan-grpc
-
-- name: ID 2 VIU
-  type: trojan
-  server: zaintest.vuclip.com
-  port: 443
-  password: dd8565fa-9bff-4740-909f-16e4ec9db80e
-  udp: true
-  sni: id-trojan-vvip-3.topvpn.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-trojan
 
 - name: SGDO AVA
   type: trojan
@@ -95,18 +71,6 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
 
-- name: ID 2 AVA
-  type: trojan
-  server: ava.game.naver.com
-  port: 443
-  password: dd8565fa-9bff-4740-909f-16e4ec9db80e
-  udp: true
-  sni: id-trojan-vvip-3.topvpn.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-trojan
-
 - name: SGDO Netflix
   type: trojan
   server: cache.netflix.com
@@ -130,18 +94,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trojan-grpc
-
-- name: ID 2 NETFLIX
-  type: trojan
-  server: chache.netflix.com
-  port: 443
-  password: dd8565fa-9bff-4740-909f-16e4ec9db80e
-  udp: true
-  sni: id-trojan-vvip-3.topvpn.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-trojan
 
 - name: SGDO tiktok
   type: trojan
@@ -167,18 +119,6 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
 
-- name: ID 2 TIKTOK
-  type: trojan
-  server: 104.21.28.78
-  port: 443
-  password: dd8565fa-9bff-4740-909f-16e4ec9db80e
-  udp: true
-  sni: id-trojan-vvip-3.topvpn.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-trojan
-
 - name: SGDO IG
   type: trojan
   server: graph.instagram.com
@@ -202,15 +142,3 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trojan-grpc
-
-- name: ID 2 IG
-  type: trojan
-  server: graph.instagram.com
-  port: 443
-  password: dd8565fa-9bff-4740-909f-16e4ec9db80e
-  udp: true
-  sni: id-trojan-vvip-3.topvpn.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-trojan
