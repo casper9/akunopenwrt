@@ -23,6 +23,18 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
 
+- name: ID 2 ILPED
+  type: trojan
+  server: bakrie.ac.id
+  port: 443
+  password: dd8565fa-9bff-4740-909f-16e4ec9db80e
+  udp: true
+  sni: bakrie.ac.id.id-trojan-vvip-3.topvpn.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-trojan
+
 - name: SGDO VIU
   type: trojan
   server: zaintest.vuclip.com
