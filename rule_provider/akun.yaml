@@ -1,35 +1,4 @@
 proxies:
-- name: Ilped SG
-  server: bakrie.ac.id
-  port: 80
-  type: vless
-  uuid: 761b69a6-470f-4efc-9a04-1d194624d0ac
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  servername: bakrie.ac.id
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: bakrie.ac.id.id.vvip-vpn.cloud
-  udp: true
-- name: Ilped SG
-  server: bakrie.ac.id
-  port: 80
-  type: vless
-  uuid: f815c481-26fd-4b66-9fd0-92af45139e77
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  servername: bakrie.ac.id
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: bakrie.ac.id.sg.vvip-vpn.cloud
-  udp: true
-
 - name: SGDO VIU
   type: trojan
   server: zaintest.vuclip.com
