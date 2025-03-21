@@ -154,21 +154,14 @@ profile:
 dns:
   enable: true
   ipv6: false
-  enhanced-mode: redir-host
-  listen: 0.0.0.0:7874
+  listen: 0.0.0.0:1056
+  enhanced-mode: fake-ip
+  use-host: true
   nameserver:
-  - 8.8.8.8
-  - 1.0.0.1
-  - https://dns.google/dns-query
-  fallback:
-  - 1.1.1.1
-  - 8.8.4.4
-  - https://cloudflare-dns.com/dns-query
-  - 112.215.203.254
-  default-nameserver:
-  - 8.8.8.8
-  - 1.1.1.1
-  - 112.215.203.254
+  - 'tls://dns.google#GLOBAL'
+  - 'tls://one.one.one.one#GLOBAL'
+  nameserver-policy:
+  "+.vuclip.com,+.viu.com,+.vidio.com,+.naver.com,+.bakrie.ac.id": [8.8.8.8, 112.215.198.248]
 rules:
 - RULE-SET,Reject,IKLAN
 - RULE-SET,Game,IN-GAME
