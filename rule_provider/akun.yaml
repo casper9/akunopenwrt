@@ -1,4 +1,36 @@
 proxies:
+- name: ILPED SG
+  type: vmess
+  server: elearning.telkomuniversity.ac.id
+  port: 80
+  uuid: 313e8b30-31d9-4c70-991b-cc2ad55b0879
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: elearning.telkomuniversity.ac.id.sg.vvip-vpn.cloud
+  udp: true
+
+- name: ILPED ID
+  type: vmess
+  server: bakrie.ac.id
+  port: 80
+  uuid: 22920277-9cb9-4721-a65d-be11a6b6e29c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: bakrie.ac.id.id.vvip-vpn.cloud
+  udp: true
+
 - name: SGDO VIU
   type: trojan
   server: zaintest.vuclip.com
