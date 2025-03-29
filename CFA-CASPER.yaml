@@ -24,6 +24,12 @@ rule-providers:
     url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/porn.yaml
     interval: 3600
     path: "./porn.yaml"
+  Streaming:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/streaming.yaml
+    interval: 3600
+    path: "./streaming.yaml"
 
 proxy-providers:
   ProxyCasper:
@@ -65,6 +71,20 @@ proxy-groups:
   interval: '300'
   tolerance: '100'
 
+- name: XL-STREAMING
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - AUTO
+  - LOADBALANCE
+  - FAILBACK
+  use:
+  - ProxyCasper
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+  tolerance: '100'
+  
 - name: IKLAN
   type: select
   disable-udp: false
@@ -167,4 +187,5 @@ rules:
 - RULE-SET,Game,IN-GAME
 - RULE-SET,Bokep,BOKEP
 - RULE-SET,XLDirect,XL-UNLIMITED
+- RULE-SET,Streaming,XL-STREAMING
 - MATCH,CASPER
