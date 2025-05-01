@@ -105,7 +105,7 @@ proxies:
 
 - name: SGDO tiktok
   type: trojan
-  server: 104.21.28.78
+  server: mssdk24-normal.tiktokv.com
   port: 443
   password: 11dcec88-bf23-4334-b689-ab5829abc22c
   udp: true
@@ -117,7 +117,7 @@ proxies:
     
 - name: NEVA ID Tiktok
   type: trojan
-  server: 104.21.28.78
+  server: mssdk24-normal.tiktokv.com
   port: 443
   password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
   udp: true
