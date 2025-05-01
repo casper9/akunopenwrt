@@ -1,7 +1,7 @@
 proxies:
 - name: ILPED SG
   type: vmess
-  server: uii.ac.id
+  server: untar.ac.id
   port: 80
   uuid: 313e8b30-31d9-4c70-991b-cc2ad55b0879
   alterId: 0
@@ -12,12 +12,12 @@ proxies:
   ws-opts:
     path: /vmess
     headers:
-      Host: uii.ac.id.id.sg.vvip-vpn.cloud
+      Host: untar.ac.id.sg.vvip-vpn.cloud
   udp: true
 
 - name: ILPED ID
   type: vmess
-  server: uii.ac.id
+  server: untar.ac.id
   port: 80
   uuid: 22920277-9cb9-4721-a65d-be11a6b6e29c
   alterId: 0
@@ -28,7 +28,7 @@ proxies:
   ws-opts:
     path: /vmess
     headers:
-      Host: uii.ac.id.id.vvip-vpn.cloud
+      Host: untar.ac.id.id.vvip-vpn.cloud
   udp: true
 
 - name: SGDO VIU
