@@ -1,80 +1,47 @@
 proxies:
-- name: ILPED SG
-  type: vmess
-  server: support.zoom.us
-  port: 80
-  uuid: 313e8b30-31d9-4c70-991b-cc2ad55b0879
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: sg.vvip-vpn.cloud
-  udp: true
-
-- name: ILPED ID
-  type: vmess
-  server: support.zoom.us
-  port: 80
-  uuid: 22920277-9cb9-4721-a65d-be11a6b6e29c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: id.vvip-vpn.cloud
-  udp: true
-
-- name: SGDO ILPED TROJAN
+- name: SG ILPED
   type: trojan
-  server: support.zoom.us
+  server: sgdo.vvip-vpn.cloud
   port: 443
   password: 11dcec88-bf23-4334-b689-ab5829abc22c
   udp: true
-  sni: sgdo.vvip-vpn.cloud
+  sni: support.zoom.us
   skip-cert-verify: true
   network: grpc
   grpc-opts:
     grpc-service-name: trojan-grpc
     
-- name: NEVA ID ILPED TROJAN
+- name: ID ILPED
   type: trojan
-  server: support.zoom.us
+  server: id.vvip-vpn.cloud
   port: 443
   password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
   udp: true
-  sni: id.vvip-vpn.cloud
+  sni: support.zoom.us
   skip-cert-verify: true
   network: grpc
   grpc-opts:
     grpc-service-name: trojan-grpc
 
-
-- name: SGDO VIU
+- name: SG UNLI XL
   type: trojan
-  server: zaintest.vuclip.com
+  server: support.zoom.us.sgdo.vvip-vpn.cloud
   port: 443
   password: 11dcec88-bf23-4334-b689-ab5829abc22c
   udp: true
-  sni: sgdo.vvip-vpn.cloud
+  sni: support.zoom.us.sgdo.vvip-vpn.cloud
   skip-cert-verify: true
   network: grpc
   grpc-opts:
     grpc-service-name: trojan-grpc
     
-- name: NEVA ID VIU
+- name: ID UNLI XL
   type: trojan
-  server: zaintest.vuclip.com
+  server: support.zoom.us.id.vvip-vpn.cloud
   port: 443
   password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
   udp: true
-  sni: id.vvip-vpn.cloud
+  sni: support.zoom.us.id.vvip-vpn.cloud
   skip-cert-verify: true
   network: grpc
   grpc-opts:
@@ -104,61 +71,13 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
 
-- name: SGDO Netflix
-  type: trojan
-  server: cache.netflix.com
-  port: 443
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  udp: true
-  sni: sgdo.vvip-vpn.cloud
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-    
-- name: NEVA ID Netflix
-  type: trojan
-  server: cache.netflix.com
-  port: 443
-  password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
-  udp: true
-  sni: id.vvip-vpn.cloud
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-
-- name: SGDO tiktok
-  type: trojan
-  server: mssdk24-normal.tiktokv.com
-  port: 443
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  udp: true
-  sni: sgdo.vvip-vpn.cloud
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-    
-- name: NEVA ID Tiktok
-  type: trojan
-  server: mssdk24-normal.tiktokv.com
-  port: 443
-  password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
-  udp: true
-  sni: id.vvip-vpn.cloud
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-
 - name: SGDO IG
   type: trojan
-  server: graph.instagram.com
+  server: sgdo.vvip-vpn.cloud
   port: 443
   password: 11dcec88-bf23-4334-b689-ab5829abc22c
   udp: true
-  sni: sgdo.vvip-vpn.cloud
+  sni: graph.instagram.com
   skip-cert-verify: true
   network: grpc
   grpc-opts:
@@ -166,11 +85,11 @@ proxies:
     
 - name: NEVA ID IG
   type: trojan
-  server: graph.instagram.com
+  server: id.vvip-vpn.cloud
   port: 443
   password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
   udp: true
-  sni: id.vvip-vpn.cloud
+  sni: graph.instagram.com
   skip-cert-verify: true
   network: grpc
   grpc-opts:
