@@ -24,6 +24,12 @@ rule-providers:
     url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/porn.yaml
     interval: 3600
     path: "./porn.yaml"
+  indo:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/indo.yaml
+    interval: 3600
+    path: "./porn.yaml"
   Streaming:
     type: http
     behavior: classical
@@ -84,7 +90,22 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: '300'
   tolerance: '100'
-  
+
+- name: DIRECT-INDO
+  type: select
+  disable-udp: false
+  proxies:
+  - AUTO
+  - FAILBACK
+  - LOADBALANCE
+  - DIRECT
+  - REJECT
+  use:
+  - ProxyCasper
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+  tolerance: '100'  
+ 
 - name: IKLAN
   type: select
   disable-udp: false
@@ -175,17 +196,20 @@ dns:
   enable: true
   ipv6: false
   listen: 0.0.0.0:1056
-  enhanced-mode: fake-ip
+  enhanced-mode: redir-host
   use-host: true
   nameserver:
-  - 'tls://dns.google#GLOBAL'
-  - 'tls://one.one.one.one#GLOBAL'
+  - 1.1.1.1
+  fallback:
+  - 1.1.1.1
+  - https://cloudflare-dns.com/dns-query
   nameserver-policy:
   "+.vuclip.com,+.viu.com,+.vidio.com,+.naver.com,+.bakrie.ac.id": [8.8.8.8, 112.215.198.248]
 rules:
 - RULE-SET,Reject,IKLAN
 - RULE-SET,Game,IN-GAME
 - RULE-SET,Bokep,BOKEP
+- RULE-SET,indo,DIRECT-INDO
 - RULE-SET,XLDirect,XL-UNLIMITED
 - RULE-SET,Streaming,XL-STREAMING
 - MATCH,CASPER
