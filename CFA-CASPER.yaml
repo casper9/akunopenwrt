@@ -29,7 +29,7 @@ rule-providers:
     behavior: classical
     url: https://raw.githubusercontent.com/casper9/akunopenwrt/main/rule_provider/indo.yaml
     interval: 3600
-    path: "./porn.yaml"
+    path: "./indo.yaml"
   Streaming:
     type: http
     behavior: classical
