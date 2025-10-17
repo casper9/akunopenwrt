@@ -119,4 +119,29 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
 
+- name: SG TSEL GAME
+  type: trojan
+  server: ir.huya.com.sg.vip-vpn.site
+  port: 443
+  password: 11dcec88-bf23-4334-b689-ab5829abc22c
+  udp: true
+  sni: ir.huya.com.sg.vip-vpn.site
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+    
+- name: ID GAME TSEL
+  type: trojan
+  server: ir.huya.com.id.vip-vpn.site
+  port: 443
+  password: e1d41552-1060-40e7-8cc8-9a3c6b5cfd08 
+  udp: true
+  sni: ir.huya.com.id.vip-vpn.site
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+
+
 
