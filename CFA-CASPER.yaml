@@ -67,8 +67,8 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - DIRECT
   - AUTO
+  - DIRECT
   - LOADBALANCE
   - FAILBACK
   use:
