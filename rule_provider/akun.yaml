@@ -11,7 +11,7 @@ proxies:
   network: ws
   servername: ava.game.naver.com.sg.vip-vpn.site
   ws-opts:
-    path: /trojan
+    path: /trojan-ws
     headers:
       Host: ava.game.naver.com.sg.vip-vpn.site
 
