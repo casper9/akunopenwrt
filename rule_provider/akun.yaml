@@ -13,7 +13,7 @@ proxies:
     headers:
       Host: ava.game.naver.com.sg.vip-vpn.site
 
-- name: BIZ AVA 2
+- name: BIZ AVA22
   server: ava.game.naver.com
   port: 443
   type: trojan
