@@ -1,4 +1,20 @@
 proxies:
+- name: BIZ AVA
+  server: sg.vip-vpn.site
+  port: 443
+  type: trojan
+  uuid: 11dcec88-bf23-4334-b689-ab5829abc22c
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.sg.vip-vpn.site
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: ava.game.naver.com.sg.vip-vpn.site
+
 - name: SG AVA
   type: trojan
   server: ava.game.naver.com.sg.vip-vpn.site
