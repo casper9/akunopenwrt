@@ -13,6 +13,38 @@ proxies:
     headers:
       Host: ava.game.naver.com.sg.vip-vpn.site
 
+- name: SG BIZ AVA2
+  server: ava.game.naver.com
+  port: 443
+  type: vless
+  uuid: 43504b41-2bf5-47cf-9a4e-a34ef91d4180
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.sg.vip-vpn.site
+  ws-opts:
+    path: /vless
+    headers:
+      Host: ava.game.naver.com.sg.vip-vpn.site
+  udp: true
+
+- name: SG BIZ AVA22
+  server: sg.vip-vpn.site
+  port: 443
+  type: vless
+  uuid: 43504b41-2bf5-47cf-9a4e-a34ef91d4180
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.sg.vip-vpn.site
+  ws-opts:
+    path: /vless
+    headers:
+      Host: ava.game.naver.com.sg.vip-vpn.site
+  udp: true
+
 - name: SG AVA
   type: trojan
   server: ava.game.naver.com.sg.vip-vpn.site
