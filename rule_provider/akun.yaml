@@ -13,6 +13,20 @@ proxies:
     headers:
       Host: ava.game.naver.com.sg.vip-vpn.site
 
+- name: BIZ Line
+  server: collection.linefriends.com
+  port: 443
+  type: trojan
+  password: 11dcec88-bf23-4334-b689-ab5829abc22c
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: collection.linefriends.com.sg.vip-vpn.site
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: collection.linefriends.com.sg.vip-vpn.site
+
 - name: BIZ AVA22
   server: ava.game.naver.com
   port: 443
