@@ -67,6 +67,7 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - CASPER
   - AUTO
   - DIRECT
   - LOADBALANCE
@@ -81,6 +82,7 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - CASPER
   - AUTO
   - LOADBALANCE
   - FAILBACK
@@ -95,6 +97,7 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - CASPER
   - AUTO
   - FAILBACK
   - LOADBALANCE
@@ -111,6 +114,7 @@ proxy-groups:
   disable-udp: false
   proxies:
   - REJECT
+  - CASPER
   - AUTO
   - LOADBALANCE
   - FAILBACK
@@ -126,6 +130,7 @@ proxy-groups:
   disable-udp: false
   proxies:
   - REJECT
+  - CASPER
   - AUTO
   - LOADBALANCE
   - FAILBACK
@@ -140,6 +145,7 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - CASPER
   - AUTO
   - LOADBALANCE
   - FAILBACK
