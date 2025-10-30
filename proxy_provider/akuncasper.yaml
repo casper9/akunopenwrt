@@ -1,12 +1,55 @@
 proxies:
-- name: kosong
+- name: SGDO
   type: trojan
-  server: server
+  server: sg.vip-vpn.site
   port: 443
-  password: uuid
+  password: 11dcec88-bf23-4334-b689-ab5829abc22c
   udp: true
-  sni: bug
+  sni: support.zoom.us
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc  
+   
+- name: IDNEVA
+  type: trojan
+  server: id-vip-vpn.site
+  port: 443
+  password: 11dcec88-bf23-4334-b689-ab5829abc22c
+  udp: true
+  sni: support.zoom.us
   skip-cert-verify: true
   network: grpc
   grpc-opts:
     grpc-service-name: trojan-grpc
+
+- name: IDNEVA Jeels
+  type: trojan
+  server: id1.jeelsboobz.art
+  port: 443
+  password: a76dcf94-6c40-456e-a399-bb93a38a480a
+  udp: true
+  sni: support.zoom.us
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: IfSZyRWbqp3lhW1g3fVRI3PfAJE7GC
+
+- name: ID CTN
+  type: trojan
+  server: mirai.lingvpn.id
+  port: 443
+  password: fasrinet
+  udp: true
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  sni: support.zoom.us
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+   path: /trojan-http
+   headers:
+     Host: support.zoom.us
+   v2ray-http-upgrade: true
+   v2ray-http-upgrade-fast-open: false 
