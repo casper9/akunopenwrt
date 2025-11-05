@@ -1,6 +1,6 @@
 proxies:
-- name: BIZ AVA
-  server: sg.vip-vpn.site
+- name: WS BIZ AVA
+  server: ava.game.naver.com
   port: 443
   type: trojan
   password: 11dcec88-bf23-4334-b689-ab5829abc22c
@@ -13,7 +13,7 @@ proxies:
     headers:
       Host: ava.game.naver.com.sg.vip-vpn.site
 
-- name: BIZ Line
+- name: WS BIZ Line
   server: collection.linefriends.com
   port: 443
   type: trojan
@@ -27,19 +27,19 @@ proxies:
     headers:
       Host: collection.linefriends.com.sg.vip-vpn.site
 
-- name: BIZ AVA22
-  server: ava.game.naver.com
+- name: WS VIDI WA
+  server: 104.18.1.196
   port: 443
   type: trojan
   password: 11dcec88-bf23-4334-b689-ab5829abc22c
   udp: true
   skip-cert-verify: true
   network: ws
-  sni: ava.game.naver.com.sg.vip-vpn.site
+  sni: sg.vip-vpn.site
   ws-opts:
     path: /trojan-ws
     headers:
-      Host: ava.game.naver.com.sg.vip-vpn.site
+      Host: sg.vip-vpn.site
 
 - name: SG AVA
   type: trojan
