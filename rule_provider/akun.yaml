@@ -31,11 +31,11 @@ proxies:
   server: 104.18.1.196
   port: 443
   type: trojan
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
+  password: 71eb1fa3-e6fd-4468-adc8-5c3be571c205
   udp: true
   skip-cert-verify: true
   network: ws
-  sni: sg.vip-vpn.site
+  sni: id.vip-vpn.site
   ws-opts:
     path: /trojan-ws
     headers:
