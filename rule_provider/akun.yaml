@@ -39,7 +39,7 @@ proxies:
   ws-opts:
     path: /trojan-ws
     headers:
-      Host: sg.vip-vpn.site
+      Host: id.vip-vpn.site
 
 - name: SG AVA
   type: trojan
