@@ -27,6 +27,20 @@ proxies:
     headers:
       Host: collection.linefriends.com.sg.vip-vpn.site
 
+- name: WS ZOOM
+  server: support.zoom.us
+  port: 443
+  type: trojan
+  password: 71eb1fa3-e6fd-4468-adc8-5c3be571c205
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: id.vip-vpn.site
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: id.vip-vpn.site
+
 - name: WS VIDI WA ID
   server: 104.18.1.196
   port: 443
