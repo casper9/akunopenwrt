@@ -1,32 +1,4 @@
-proxies:
-- name: WS BIZ AVA
-  server: ava.game.naver.com
-  port: 443
-  type: trojan
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  udp: true
-  skip-cert-verify: true
-  network: ws
-  sni: ava.game.naver.com.sg.vip-vpn.site
-  ws-opts:
-    path: /trojan-ws
-    headers:
-      Host: ava.game.naver.com.sg.vip-vpn.site
-
-- name: WS BIZ Line
-  server: collection.linefriends.com
-  port: 443
-  type: trojan
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  udp: true
-  skip-cert-verify: true
-  network: ws
-  sni: collection.linefriends.com.sg.vip-vpn.site
-  ws-opts:
-    path: /trojan-ws
-    headers:
-      Host: collection.linefriends.com.sg.vip-vpn.site
-
+proxies
 - name: WS ZOOM
   server: support.zoom.us
   port: 443
@@ -54,20 +26,6 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id.vip-vpn.site
-
-- name: WS VIDI WA SG
-  server: 104.18.1.196
-  port: 443
-  type: trojan
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  udp: true
-  skip-cert-verify: true
-  network: ws
-  sni: sg.vip-vpn.site
-  ws-opts:
-    path: /trojan-ws
-    headers:
-      Host: sg.vip-vpn.site
 
 - name: SG AVA
   type: trojan
