@@ -1,7 +1,21 @@
 proxies:
 
-- name: WS ZOOM
+- name: ZOOM ID
   server: support.zoom.us
+  port: 443
+  type: trojan
+  password: 71eb1fa3-e6fd-4468-adc8-5c3be571c205
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: id.vip-vpn.site
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: id.vip-vpn.site
+
+- name: Edukasi ID
+  server: 104.17.3.81
   port: 443
   type: trojan
   password: 71eb1fa3-e6fd-4468-adc8-5c3be571c205
@@ -52,30 +66,7 @@ proxies:
   grpc-opts:
     grpc-service-name: trojan-grpc
 
-- name: SG AVA 2
-  type: trojan
-  server: sg.vip-vpn.site
-  port: 443
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  udp: true
-  sni: ava.game.naver.com.sg.vip-vpn.site
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
 
-- name: ID AVA 2
-  type: trojan
-  server: id.vip-vpn.site
-  port: 443
-  password: 71eb1fa3-e6fd-4468-adc8-5c3be571c205
-  udp: true
-  sni: ava.game.naver.com.id.vip-vpn.site
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-    
 - name: SG UNLI XL
   type: trojan
   server: support.zoom.us.sg.vip-vpn.site
