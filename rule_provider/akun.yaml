@@ -16,7 +16,7 @@ proxies:
       Host: support.zoom.us.id.skarti.vip-vpn.site
   udp: true
 
-- name: Id Skarti ruangguru.com
+- name: Id Skarti ruangguru
   server: edu.ruangguru.com
   port: 443
   type: vmess
@@ -75,7 +75,7 @@ proxies:
     headers:
         Host: support.zoom.us.id.vip-vpn.site
 
-- name: ID NEVA
+- name: ID NEVA RUANGGURU
   server: edu.ruangguru.com
   port: 443
   type: trojan
