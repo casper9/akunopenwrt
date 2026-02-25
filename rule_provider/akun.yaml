@@ -1,190 +1,59 @@
 proxies:
-- name: ZOOM ID
+- name: Id Skarti
+  server: support.zoom.us
+  port: 443
+  type: vmess
+  uuid: 0a056b0d-0592-49b7-a9f6-34daf199c117
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: support.zoom.us.idskarti.vip-vpn.site
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: support.zoom.us.idskarti.vip-vpn.site
+  udp: true
+
+- name: SG NM2
   server: support.zoom.us
   port: 443
   type: trojan
-  password: 71eb1fa3-e6fd-4468-adc8-5c3be571c205
-  udp: true
-  skip-cert-verify: true
+  password: 06ec5aec-b65c-409b-a39d-8688ffac5406
   network: ws
-  sni: id.vip-vpn.site
+  sni: support.zoom.us.yu.xhmt.web.id
+  skip-cert-verify: true
+  udp: true
   ws-opts:
     path: /trojan-ws
     headers:
-      Host: id.vip-vpn.site
+        Host: support.zoom.us.yu.xhmt.web.id
 
-- name: Edukasi ID
-  server: 104.17.3.81
+- name: SG NM1
+  server: support.zoom.us
   port: 443
   type: trojan
-  password: 71eb1fa3-e6fd-4468-adc8-5c3be571c205
-  udp: true
-  skip-cert-verify: true
+  password: 0699ef8e-3ae7-4253-94ff-748b7aaab070
   network: ws
-  sni: id.vip-vpn.site
+  sni: support.zoom.us.sg2.vip-vpn.site
+  skip-cert-verify: true
+  udp: true
   ws-opts:
     path: /trojan-ws
     headers:
-      Host: id.vip-vpn.site
+        Host: support.zoom.us.sg2.vip-vpn.site
 
-- name: WS VIDI WA ID
-  server: 104.18.1.196
+- name: ID NEVA
+  server: support.zoom.us
   port: 443
   type: trojan
-  password: 71eb1fa3-e6fd-4468-adc8-5c3be571c205
-  udp: true
-  skip-cert-verify: true
+  password: 11dcec88-bf23-4334-b689-ab5829abc22c
   network: ws
-  sni: id.vip-vpn.site
-  ws-opts:
-    path: /trojan-ws
-    headers:
-      Host: id.vip-vpn.site
-
-- name: SG AVA
-  type: trojan
-  server: ava.game.naver.com.sg.vip-vpn.site
-  port: 443
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  udp: true
-  sni: ava.game.naver.com.sg.vip-vpn.site
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-
-- name: ID AVA
-  type: trojan
-  server: ava.game.naver.com.id.vip-vpn.site
-  port: 443
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  udp: true
-  sni: ava.game.naver.com.id.vip-vpn.site
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-
-
-- name: SG UNLI XL
-  type: trojan
-  server: support.zoom.us.sg.vip-vpn.site
-  port: 443
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  udp: true
-  sni: support.zoom.us.sg.vip-vpn.site
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-    
-- name: ID UNLI XL
-  type: trojan
-  server: support.zoom.us.id.vip-vpn.site
-  port: 443
-  password: 71eb1fa3-e6fd-4468-adc8-5c3be571c205 
-  udp: true
   sni: support.zoom.us.id.vip-vpn.site
   skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-  
-- name: SG ZOOM TSEL
-  type: trojan
-  server: sg.vip-vpn.site
-  port: 443
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
   udp: true
-  sni: support.zoom.us
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-    
-- name: ID ZOOM TSEL
-  type: trojan
-  server: id.vip-vpn.site
-  port: 443
-  password: 71eb1fa3-e6fd-4468-adc8-5c3be571c205 
-  udp: true
-  sni: support.zoom.us
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-
-- name: SG TIKTOK
-  type: trojan
-  server: api24-normal.tiktokv.com.sg.vip-vpn.site
-  port: 443
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  udp: true
-  sni: api24-normal.tiktokv.com.sg.vip-vpn.site
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-    
-- name: ID TIKTOK
-  type: trojan
-  server: api24-normal.tiktokv.com.id.vip-vpn.site
-  port: 443
-  password: 71eb1fa3-e6fd-4468-adc8-5c3be571c205 
-  udp: true
-  sni: api24-normal.tiktokv.com.id.vip-vpn.site
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-
-- name: SG EDU 
-  type: trojan
-  server: edu.ruangguru.com.sg.vip-vpn.site
-  port: 443
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  udp: true
-  sni: edu.ruangguru.com.sg.vip-vpn.site
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-    
-- name: ID EDU
-  type: trojan
-  server: edu.ruangguru.com.id.vip-vpn.site
-  port: 443
-  password: 71eb1fa3-e6fd-4468-adc8-5c3be571c205 
-  udp: true
-  sni: edu.ruangguru.com.id.vip-vpn.site
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-
-- name: SG TSEL GAME
-  type: trojan
-  server: ir.huya.com.sg.vip-vpn.site
-  port: 443
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  udp: true
-  sni: ir.huya.com.sg.vip-vpn.site
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-    
-- name: ID GAME TSEL
-  type: trojan
-  server: ir.huya.com.id.vip-vpn.site
-  port: 443
-  password: 71eb1fa3-e6fd-4468-adc8-5c3be571c205 
-  udp: true
-  sni: ir.huya.com.id.vip-vpn.site
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-
-
-
+  ws-opts:
+    path: /trojan-ws
+    headers:
+        Host: support.zoom.us.id.vip-vpn.site
