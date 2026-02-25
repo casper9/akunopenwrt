@@ -8,13 +8,30 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: support.zoom.us.idskarti.vip-vpn.site
+  servername: support.zoom.us.id.skarti.vip-vpn.site
   network: ws
   ws-opts:
     path: /vmess
     headers:
-      Host: support.zoom.us.idskarti.vip-vpn.site
+      Host: support.zoom.us.id.skarti.vip-vpn.site
   udp: true
+
+- name: Id Skarti ruangguru.com
+  server: edu.ruangguru.com
+  port: 443
+  type: vmess
+  uuid: 0a056b0d-0592-49b7-a9f6-34daf199c117
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: edu.ruangguru.com.skarti.vip-vpn.site
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: edu.ruangguru.com.skarti.vip-vpn.site
+  udp: true 
 
 - name: SG NM2
   server: support.zoom.us
@@ -57,3 +74,17 @@ proxies:
     path: /trojan-ws
     headers:
         Host: support.zoom.us.id.vip-vpn.site
+
+- name: ID NEVA
+  server: edu.ruangguru.com
+  port: 443
+  type: trojan
+  password: 11dcec88-bf23-4334-b689-ab5829abc22c
+  network: ws
+  sni: edu.ruangguru.com.vip-vpn.site
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan-ws
+    headers:
+        Host: edu.ruangguru.com.id.vip-vpn.site
