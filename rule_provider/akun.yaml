@@ -1,90 +1,40 @@
 proxies:
-- name: Id Skarti
-  server: support.zoom.us
-  port: 443
-  type: vmess
-  uuid: 0a056b0d-0592-49b7-a9f6-34daf199c117
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: support.zoom.us.id.skarti.vip-vpn.site
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: support.zoom.us.id.skarti.vip-vpn.site
-  udp: true
-
-- name: Id Skarti ruangguru
-  server: edu.ruangguru.com
-  port: 443
-  type: vmess
-  uuid: 0a056b0d-0592-49b7-a9f6-34daf199c117
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: edu.ruangguru.com.skarti.vip-vpn.site
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: edu.ruangguru.com.skarti.vip-vpn.site
-  udp: true 
-
-- name: SG NM2
+- name: POINT SG
   server: support.zoom.us
   port: 443
   type: trojan
-  password: 06ec5aec-b65c-409b-a39d-8688ffac5406
+  password: 165bebc38a528585
   network: ws
-  sni: support.zoom.us.yu.xhmt.web.id
+  sni: support.zoom.us.googlevideo.sbs
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /in-depth-secrets-to-fintech-solutions/buy-trojan-ws-pm-telegram-at-synricha
+    headers:
+        Host: support.zoom.us.googlevideo.sbs
+
+- name: SG NEWMEDIA
+  server: support.zoom.us
+  port: 443
+  type: trojan
+  password: 525e5dbe-8b23-404d-a668-f748b9d08c38
+  network: ws
+  sni: support.zoom.us.newmedia.garudabangsa.web.id
   skip-cert-verify: true
   udp: true
   ws-opts:
     path: /trojan-ws
     headers:
-        Host: support.zoom.us.yu.xhmt.web.id
+        Host: support.zoom.us.newmedia.garudabangsa.web.id
 
-- name: SG NM1
+- name: ID Neva
+  type: trojan
   server: support.zoom.us
   port: 443
-  type: trojan
-  password: 0699ef8e-3ae7-4253-94ff-748b7aaab070
-  network: ws
-  sni: support.zoom.us.sg2.vip-vpn.site
-  skip-cert-verify: true
+  password: pervip
   udp: true
-  ws-opts:
-    path: /trojan-ws
-    headers:
-        Host: support.zoom.us.sg2.vip-vpn.site
-
-- name: ID NEVA
-  server: support.zoom.us
-  port: 443
-  type: trojan
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  network: ws
   sni: support.zoom.us.id.vip-vpn.site
   skip-cert-verify: true
-  udp: true
-  ws-opts:
-    path: /trojan-ws
-    headers:
-        Host: support.zoom.us.id.vip-vpn.site
-
-- name: ID NEVA RUANGGURU
-  server: edu.ruangguru.com
-  port: 443
-  type: trojan
-  password: 11dcec88-bf23-4334-b689-ab5829abc22c
-  network: ws
-  sni: edu.ruangguru.com.vip-vpn.site
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-    path: /trojan-ws
-    headers:
-        Host: edu.ruangguru.com.id.vip-vpn.site
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
