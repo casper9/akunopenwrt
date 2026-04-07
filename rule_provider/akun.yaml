@@ -1,18 +1,4 @@
 proxies:
-- name: POINT SG
-  server: support.zoom.us
-  port: 443
-  type: trojan
-  password: 165bebc38a528585
-  network: ws
-  sni: support.zoom.us.googlevideo.sbs
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-    path: /in-depth-secrets-to-fintech-solutions/buy-trojan-ws-pm-telegram-at-synricha
-    headers:
-        Host: support.zoom.us.googlevideo.sbs
-
 - name: SG NEWMEDIA
   server: support.zoom.us
   port: 443
@@ -27,13 +13,13 @@ proxies:
     headers:
         Host: support.zoom.us.newmedia.garudabangsa.web.id
 
-- name: ID Neva
+- name: ID IKD
   type: trojan
   server: support.zoom.us
   port: 443
-  password: pervip
+  password: 1d57e3b5-f4b2-4fcc-8aad-8315504cc13c
   udp: true
-  sni: support.zoom.us.id.vip-vpn.site
+  sni: support.zoom.us.ikd.vip-vpn.site
   skip-cert-verify: true
   network: grpc
   grpc-opts:
