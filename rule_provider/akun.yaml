@@ -1,23 +1,23 @@
 proxies:
-- name: SG NEWMEDIA
+- name: ID IKD
   server: support.zoom.us
   port: 443
   type: trojan
-  password: 525e5dbe-8b23-404d-a668-f748b9d08c38
+  password: 1d57e3b5-f4b2-4fcc-8aad-8315504cc13c
   network: ws
-  sni: support.zoom.us.newmedia.garudabangsa.web.id
+  sni: support.zoom.us.ikd.vip-vpn.site
   skip-cert-verify: true
   udp: true
   ws-opts:
     path: /trojan-ws
     headers:
-        Host: support.zoom.us.newmedia.garudabangsa.web.id
+        Host: support.zoom.us.ikd.vip-vpn.site
 
-- name: ID IKD
+- name: ID IKD GRPC
   type: trojan
   server: support.zoom.us
   port: 443
-  password: 1d57e3b5-f4b2-4fcc-8aad-8315504cc13c
+  password: 1D57E3B5-F4B2-4FCC-8AAD-8315504CC13C
   udp: true
   sni: support.zoom.us.ikd.vip-vpn.site
   skip-cert-verify: true
